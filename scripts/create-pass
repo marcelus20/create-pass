@@ -1,3 +1,5 @@
 #!/bin/bash
 
-python3 create-pass.py $1 $2
+SCRIPT_HOME=${CREATE_PASS_HOME:-~/.create-pass}
+
+python3 $SCRIPT_HOME/create-pass.py $1 $2
