@@ -1,0 +1,3 @@
+#!/bin/bash
+
+python3 $CREATE_PASS_HOME/create-pass.py $1 $2
