@@ -8,7 +8,7 @@ create-pass is a shell script program that utilises python to generate secure pa
  - You need to have python3 installed and it should be involked by using "python3" command. 
  - Open your terminal and issue the following commands:
 
-# Download the installer file
+Download the installer file
 ```bash
 wget https://raw.githubusercontent.com/marcelus20/create-pass/master/create-pass-installer.sh
 ```
