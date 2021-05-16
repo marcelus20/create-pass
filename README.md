@@ -17,14 +17,18 @@ This program is not a password manager, it won't store passwords anywhere in you
  - Don't clone this repository to install program, instead follow the steps below. 
  - You need to have python3 installed and it should be involked by using "python3" command. 
  - Open your terminal and issue the following commands:
+
+Download the installer file
 ```bash
-# Download the installer file
 wget https://raw.githubusercontent.com/marcelus20/create-pass/master/create-pass-installer.sh
+```
 
-#Make it executable in your linux system. 
+Make it executable in your linux system. 
+```bash
 chmod +x create-pass-installer.sh
-
-#run the installer
+```
+Run the installer
+```bash
 ./create-pass-installer.sh
 ```
 
