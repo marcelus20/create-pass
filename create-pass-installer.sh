@@ -35,6 +35,4 @@ wget https://raw.githubusercontent.com/marcelus20/create-pass/master/scripts/cre
 mv ./create-pass ~/.create-pass/bin
 chmod +x ~/.create-pass/bin/create-pass
 
-echo "bashrc file needs to be sourced, so changes will take effect after you restarted your system."
-echo ""
-echo "Please, restart your system."
+echo "Close your current terminal and re-open it, or manually issue the command 'source ~/.bashrc'."

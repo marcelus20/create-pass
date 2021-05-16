@@ -2,6 +2,16 @@
 
 create-pass is a shell script program that utilises python to generate secure passwords by printing them in the terminal. 
 
+## Use case
+
+This program is not a password manager, it won't store passwords anywhere in your computer. It is to be solely used to suggest secure passwords when you are creating a new account somewhere or wants to update an existing one but don't want to to type random keys in the keyboard. It wil still be your responsibility to keep it safe. The use case has a very narrow scope
+ - User wants to create a new password at a website, but doesn't have an idea which one it will be. 
+ - User will open terminal, invoke the program, pass the parameters and a password suggestion will show
+ - User will pick that password or generate a new one if they wish.
+ - User will copy to clipboard, paste the new password in the website and take note of that password or leave for the browser to securely store it. 
+ - User will close the program. 
+
+
 ## Installation
 
  - Don't clone this repository to install program, instead follow the steps below. 
@@ -18,10 +28,9 @@ chmod +x create-pass-installer.sh
 ./create-pass-installer.sh
 ```
 
-After executing these commands, it should create a ~/.create-pass folder and add the folder in your $PATH variable using the ~/.bashrc file. 
-Because the .bashrc needs to be sourced, <b>the invoking of "create-pass" program will not work until you either</b>:
- - Issue the command <b>source ~/.bashrc</b> in the terminal after the installation; or
- - Restart your computer.
+After executing these commands, you should have a ~/.create-pass folder and your $PATH variable should now include it.
+
+Before using, close your current terminal and open a new one, or manually enter the command "source ~/.bashrc"
 
 Now you are good to use it. 
 
