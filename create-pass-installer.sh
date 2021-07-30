@@ -17,9 +17,20 @@ echo "CREATE_PASS_HOME=~/.create-pass" >> ~/.bashrc
 
 #Download the python file from github to the folder ~/.create-pass folder
 echo ""
-echo "Downloading python script..."
-wget https://raw.githubusercontent.com/marcelus20/create-pass/master/scripts/create-pass.py
-mv ./create-pass.py ~/.create-pass/
+echo "Downloading python Module"
+wget https://raw.githubusercontent.com/marcelus20/create-pass/master/CreatePass/__main__.py
+wget https://raw.githubusercontent.com/marcelus20/create-pass/master/CreatePass/chars.py
+wget https://raw.githubusercontent.com/marcelus20/create-pass/master/CreatePass/CreatePassView.py
+wget https://raw.githubusercontent.com/marcelus20/create-pass/master/CreatePass/CreatePass.py
+
+mkdir CreatePass
+
+mv ./__main__.py ./CreatePass
+mv ./chars.py ./CreatePass
+mv ./CreatePassView.py ./CreatePass
+mv ./CreatePass.py ./CreatePass
+
+mv ./CreatePass ~/.create-pass/
 
 
 #export the variable to the .bashrc
@@ -31,7 +42,7 @@ echo "export PATH=\$PATH:\$CREATE_PASS_HOME/bin" >> ~/.bashrc
 #Download the exec file to bin
 echo ""
 echo "Downloading script file..."
-wget https://raw.githubusercontent.com/marcelus20/create-pass/master/scripts/create-pass
+wget https://raw.githubusercontent.com/marcelus20/create-pass/master/create-pass
 mv ./create-pass ~/.create-pass/bin
 chmod +x ~/.create-pass/bin/create-pass
 
